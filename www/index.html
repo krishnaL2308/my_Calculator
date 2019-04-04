@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<style>
+input{
+
+width:100;
+height:85;
+}
+</style>
+<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/Calculator.js"></script>
+<style type="text/css">
+	#msg{
+		padding-left: 25%;
+
+		}
+</style>
+</head>
+<body>
+
+
+
+
+
+<div data-role="page" id="page1">
+
+	<div data-role="header">
+		<h1>Simple Calculator</h1>
+	</div><!-- /header -->
+
+
+
+	<!-- NavBar -->
+	<div data-role="navbar">
+	<ul>
+		<li><a href="#" class="ui-btn ui-btn-icon-top ui-icon-home">Home</a></li>
+		<li><a href="#page1" class="ui-btn ui-btn-icon-top ui-icon-grid">Calculator</a></li>
+		<li><a href="#page3" class="ui-btn ui-btn-icon-top ui-icon-info">Help</a></li>
+	</ul>
+	</div><!-- /navbar -->
+
+
+
+	<!-- /content -->
+	<div role="main" class="ui-content">
+<input type="text" name="text-basic" id="txt1" value="" >
+<select name="select-choice-1" id="selectOperation">
+	<option value="selectOP">---Select---</option>
+    <option value="add">+</option>
+    <option value="minus">-</option>
+    <option value="multiply">*</option>
+    <option value="Divide">/</option>
+</select>
+<input type="text" name="text-basic" id="txt2" value="" >
+<button id="btnCalculate" class="ui-shadow ui-btn ui-corner-all">Calculate</button>
+<span id="spanMsg"><p id="msg">You must fill in both textboxes</p></span>
+	</div><!-- /content -->
+
+
+	<!-- /footer -->
+	<div data-role="footer">
+		<h4>Homework</h4>
+	</div><!-- /footer -->
+
+
+</div><!-- /page -->
+
+
+
+
+
+
+
+
+<!-- page2-Results -->
+<div data-role="page" id="page2">
+
+	<div data-role="header">
+		<h1>Results</h1>
+	</div><!-- /header -->
+
+
+
+	<!-- NavBar -->
+	<div data-role="navbar">
+	<ul>
+		<li><a href="#" class="ui-btn ui-btn-icon-top ui-icon-home">Home</a></li>
+		<li><a href="#" class="ui-btn ui-btn-icon-top ui-icon-grid">Calculator</a></li>
+		<li><a href="#" class="ui-btn ui-btn-icon-top ui-icon-info">Help</a></li>
+	</ul>
+	</div><!-- /navbar -->
+
+
+
+	<!-- /content -->
+	<div role="main" class="ui-content">
+		<label for="text-basic">Operation :</label>
+<input type="text" name="text-basic" id="txtOp" value="" >
+<label for="text-basic">Result :</label>
+<input type="text" name="text-basic" id="txtResult" value="" >
+<button id="btnBack" class="ui-shadow ui-btn ui-corner-all">Back</button>
+	</div><!-- /content -->
+
+
+	<!-- /footer -->
+	<div data-role="footer">
+		<h4>Homework</h4>
+	</div><!-- /footer -->
+
+
+</div><!-- /page -->
+
+
+
+
+
+<!-- help page -->
+<div data-role="page" id="page3" >
+
+	<div data-role="header">
+		<h1>Simple Calculator</h1>
+	</div><!-- /header -->
+
+
+
+	<!-- NavBar -->
+	<div data-role="navbar">
+	<ul>
+		<li><a href="#" class="ui-btn ui-btn-icon-top ui-icon-home">Home</a></li>
+		<li><a href="#page1" class="ui-btn ui-btn-icon-top ui-icon-grid">Calculator</a></li>
+		<li><a href="#" class="ui-btn ui-btn-icon-top ui-icon-info">Help</a></li>
+	</ul>
+	</div><!-- /navbar -->
+
+
+
+	<!-- /content -->
+	<div role="main" class="ui-content">
+		<p>This is the help section and provides basic information
+		about how to use a calculator.</p>
+		<a href="#pagedia" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-info">More Info</a>
+	</div><!-- /content -->
+
+
+	<!-- /footer -->
+	<div data-role="footer">
+		<h4>Homework</h4>
+	</div><!-- /footer -->
+
+
+
+
+
+
+</div><!-- /page -->
+
+
+
+
+<!-- dialogue page -->
+
+<!-- Dialogue/pop-up  page -->
+<div data-role="page" id="pagedia" data-dialog="true">
+
+	<div data-role="header">
+		<a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext">Delete</a><h1>More Info</h1>
+	</div><!-- /header -->
+
+
+
+	<!-- /content -->
+	<div role="main" class="ui-content">
+		<p>You have requested for more info about the app</p>
+		<a href="#page3" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back">Dismiss</a>
+	</div><!-- /content -->
+
+
+</div><!-- /page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+</script>
